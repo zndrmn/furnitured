@@ -14,14 +14,14 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.zndrmn.furnitured.Furnitured;
 import net.zndrmn.furnitured.properties.BlockProperties;
-import net.zndrmn.furnitured.properties.block.StraightCounterBlock;
+import net.zndrmn.furnitured.properties.block.StraightKitchenCounterBlock;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
 public class Blocks {
 
-    public  static final Block STRAIGHT_COUNTER = registerBlock("straight_counter", new StraightCounterBlock(BlockProperties.TEMPLATE_COUNTER), IItemGroup.FURNITURED, "tooltip.furnitured.straight_counter");
+    public  static final Block STRAIGHT_KITCHEN_COUNTER = registerBlock("straight_kitchen_counter", new StraightKitchenCounterBlock(BlockProperties.TEMPLATE_KITCHEN_COUNTER), IItemGroup.FURNITURED, "tooltip.furnitured.straight_kitchen_counter");
 
 
 

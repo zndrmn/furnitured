@@ -5,8 +5,8 @@
 
 
   "block": "block translations",
-  "block.furnitured.straight_counter": "Counter",
+  "block.furnitured.straight_kitchen_counter": "Kitchen Counter",
 
   "tooltip": "block tooltips",
-  "tooltip.furnitured.straight_counter": "§8§ostraight counter§r"
+  "tooltip.furnitured.straight_kitchen_counter": "§8§ostraight kitchen counter§r"
 }
