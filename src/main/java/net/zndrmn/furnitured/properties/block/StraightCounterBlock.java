@@ -15,7 +15,7 @@ import net.minecraft.world.BlockView;
 
 import static net.minecraft.block.HorizontalFacingBlock.FACING;
 
-public class CounterBlock extends Block {
+public class StraightCounterBlock extends Block {
 
     private static final VoxelShape SHAPE_NORTH = VoxelShapes.combineAndSimplify(Block.createCuboidShape(0, 12, 0, 16, 16, 16), Block.createCuboidShape(0, 0, 1, 16, 12, 16), BooleanBiFunction.OR);
     private static final VoxelShape SHAPE_EAST  = VoxelShapes.combineAndSimplify(Block.createCuboidShape(0, 12, 0, 16, 16, 16), Block.createCuboidShape(0, 0, 0, 15, 12, 16), BooleanBiFunction.OR);
@@ -39,7 +39,7 @@ public class CounterBlock extends Block {
         }
     }
 
-    public CounterBlock(Settings settings) {
+    public StraightCounterBlock(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }
