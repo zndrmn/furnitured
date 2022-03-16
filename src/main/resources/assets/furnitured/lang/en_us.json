@@ -2,6 +2,11 @@
   "item": "item translations",
   "item.furnitured.nails": "Nails",
 
+
+
   "block": "block translations",
-  "block.furnitured.counter": "Counter"
+  "block.furnitured.straight_counter": "Counter",
+
+  "tooltip": "block tooltips",
+  "tooltip.furnitured.straight_counter": "§8§ostraight counter§r"
 }
