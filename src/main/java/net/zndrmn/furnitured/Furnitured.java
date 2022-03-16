@@ -20,6 +20,5 @@ public class Furnitured implements ModInitializer {
         Items.registerItems();
         Blocks.registerBlocks();
 
-
     }
 }
