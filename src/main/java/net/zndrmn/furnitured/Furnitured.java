@@ -1,8 +1,6 @@
 package net.zndrmn.furnitured;
 
 import net.fabricmc.api.ModInitializer;
-import net.zndrmn.furnitured.block.Blockz;
-import net.zndrmn.furnitured.item.Itemz;
 import net.zndrmn.furnitured.registry.Blocks;
 import net.zndrmn.furnitured.registry.Items;
 import org.slf4j.Logger;
