@@ -1,4 +1,4 @@
-package net.zndrmn.furnitured.block.properties;
+package net.zndrmn.furnitured.properties.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

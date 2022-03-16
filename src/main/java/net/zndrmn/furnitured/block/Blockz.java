@@ -9,12 +9,11 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.zndrmn.furnitured.Furnitured;
-import net.zndrmn.furnitured.block.properties.CounterBlock;
+import net.zndrmn.furnitured.properties.block.CounterBlock;
 
 public class Blockz {
 
-    public  static final Block COUNTER = registerBlock("counter",
-            new CounterBlock(
+    public  static final Block CCOUNTER = registerBlock("ccounter", new Block(
                     FabricBlockSettings
                     .of(Material.WOOD)
                     .sounds(BlockSoundGroup.WOOD)
