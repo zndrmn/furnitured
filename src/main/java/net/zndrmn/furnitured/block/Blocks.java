@@ -10,21 +10,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.zndrmn.furnitured.Furnitured;
 import net.zndrmn.furnitured.block.properties.CounterBlock;
-import net.zndrmn.furnitured.block.properties.TestCounterShape;
 
 public class Blocks {
 
     public  static final Block COUNTER = registerBlock("counter",
             new CounterBlock(
-                    FabricBlockSettings
-                    .of(Material.WOOD)
-                    .sounds(BlockSoundGroup.WOOD)
-                    .hardness(2)
-                    .resistance(2)
-                    .requiresTool()), ItemGroup.MISC);
-
-    public  static final Block TESTCOUNTER = registerBlock("testcounter",
-            new TestCounterShape(Blocks.COUNTER.getDefaultState(),
                     FabricBlockSettings
                     .of(Material.WOOD)
                     .sounds(BlockSoundGroup.WOOD)
