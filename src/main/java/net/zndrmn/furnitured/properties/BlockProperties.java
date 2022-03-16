@@ -6,7 +6,7 @@ import net.minecraft.sound.BlockSoundGroup;
 
 public class BlockProperties {
 
-    public static final FabricBlockSettings COUNTER = FabricBlockSettings
+    public static final FabricBlockSettings TEMPLATE_COUNTER = FabricBlockSettings
             .of(Material.WOOD)
             .sounds(BlockSoundGroup.WOOD)
             .hardness(2)

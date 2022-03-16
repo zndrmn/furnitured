@@ -13,7 +13,7 @@ import net.zndrmn.furnitured.properties.block.CounterBlock;
 
 public class Blocks {
 
-    public  static final Block COUNTER = registerBlock("counter", new CounterBlock(BlockProperties.COUNTER), IItemGroup.FURNITURED);
+    public  static final Block COUNTER = registerBlock("counter", new CounterBlock(BlockProperties.TEMPLATE_COUNTER), IItemGroup.FURNITURED);
 
 
 
