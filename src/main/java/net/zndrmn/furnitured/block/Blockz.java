@@ -11,7 +11,7 @@ import net.minecraft.util.registry.Registry;
 import net.zndrmn.furnitured.Furnitured;
 import net.zndrmn.furnitured.block.properties.CounterBlock;
 
-public class Blocks {
+public class Blockz {
 
     public  static final Block COUNTER = registerBlock("counter",
             new CounterBlock(

@@ -7,7 +7,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.zndrmn.furnitured.Furnitured;
 
-public class Items {
+public class Itemz {
 
     public static final Item NAILS = registerItem("nails",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
