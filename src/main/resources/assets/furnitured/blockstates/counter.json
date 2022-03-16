@@ -1,21 +1,21 @@
 {
   "variants": {
     "facing=north": {
-      "model": "furnitured:block/counter",
+      "model": "furnitured:block/straight_counter",
       "uvlock": true
     },
     "facing=east": {
-      "model": "furnitured:block/counter",
+      "model": "furnitured:block/straight_counter",
       "y": 90,
       "uvlock": true
     },
     "facing=south": {
-      "model": "furnitured:block/counter",
+      "model": "furnitured:block/straight_counter",
       "y": 180,
       "uvlock": true
     },
     "facing=west": {
-      "model": "furnitured:block/counter",
+      "model": "furnitured:block/straight_counter",
       "y": 270,
       "uvlock": true
     }
