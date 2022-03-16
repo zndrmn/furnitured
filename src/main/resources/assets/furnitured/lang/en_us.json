@@ -1,4 +1,7 @@
 {
+
+  "itemGroup.furnitured.furnitured": "Furnitured",
+
   "item": "item translations",
   "item.furnitured.nails": "Nails",
 
@@ -9,4 +12,5 @@
 
   "tooltip": "block tooltips",
   "tooltip.furnitured.straight_kitchen_counter": "§8§ostraight kitchen counter§r"
+
 }
