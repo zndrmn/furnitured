@@ -5,7 +5,7 @@
 		"1": "block/beehive_front",
 		"2": "block/beehive_side",
 		"3": "block/stripped_oak_log",
-		"particle": "block/beehive_end"
+		"particle": "block/stripped_oak_log"
 	},
 	"elements": [
 		{
