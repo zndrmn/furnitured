@@ -72,49 +72,10 @@ public class InnerKitchenCounterBlock extends Block {
         }
     }
 
-    //@Override
-    //public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-    //    switch ((Direction) state.get(FACING)) {
-    //        case UP :
-    //        case DOWN :
-    //        case SOUTH :
-    //        default :
-    //            return SHAPE_SOUTH;
-    //        case NORTH :
-    //            return SHAPE_NORTH;
-    //        case WEST :
-    //            return SHAPE_WEST;
-    //        case EAST :
-    //            return SHAPE_EAST;
-    //    }
-    //}
-
-    //public InnerRightKitchenCounterBlock(Settings settings) {
-    //    super(settings);
-    //    setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
-    //}
-
     @Override
     public BlockState getPlacementState(ItemPlacementContext context) {
         return this.getDefaultState().with(FACING, context.getPlayerFacing().getOpposite());
     }
-
-
-    //@Override
-    //public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-    //    switch (state.get(FACING)) {
-    //        case NORTH :
-    //            return SHAPE_NORTH;
-    //        case EAST  :
-    //            return SHAPE_EAST;
-    //        case SOUTH :
-    //            return SHAPE_SOUTH;
-    //        case WEST  :
-    //            return SHAPE_WEST;
-    //        default :
-    //            return SHAPE_NORTH;
-    //    }
-    //}
 
     @Override
     public BlockState rotate(BlockState state, BlockRotation rotation) {
@@ -126,21 +87,9 @@ public class InnerKitchenCounterBlock extends Block {
         return state.rotate(mirror.getRotation((Direction)state.get(FACING)));
     }
 
-
-
-    //@Override
-    //public BlockState getRotation(BlockState state, getRotation rotate) {
-    //    return state.with(FACING, rotate.getRotation(state.get(FACING)))
-    //}
-
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
         stateManager.add(Properties.HORIZONTAL_FACING);
     }
-
-    //@Override
-    //public BlockState getPlacementState(ItemPlacementContext ctx) {
-    //    return (BlockState)this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getPlayerFacing().getOpposite());
-    //}
 
 }
