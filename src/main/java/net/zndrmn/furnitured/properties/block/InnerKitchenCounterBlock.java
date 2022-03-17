@@ -49,6 +49,8 @@ public class InnerKitchenCounterBlock extends Block {
             Block.createCuboidShape(0, 12, 0, 16, 16, 16))
             .reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
+
+
     public InnerKitchenCounterBlock(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
