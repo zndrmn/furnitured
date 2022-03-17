@@ -14,7 +14,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.zndrmn.furnitured.Furnitured;
 import net.zndrmn.furnitured.properties.BlockProperties;
-import net.zndrmn.furnitured.properties.block.InnerRightKitchenCounterBlock;
+import net.zndrmn.furnitured.properties.block.InnerKitchenCounterBlock;
 import net.zndrmn.furnitured.properties.block.StraightKitchenCounterBlock;
 import org.jetbrains.annotations.Nullable;
 
@@ -23,7 +23,7 @@ import java.util.List;
 public class Blocks {
 
     public  static final Block STRAIGHT_KITCHEN_COUNTER = registerBlock("straight_kitchen_counter", new StraightKitchenCounterBlock(BlockProperties.TEMPLATE_KITCHEN_COUNTER), IItemGroup.FURNITURED, "tooltip.furnitured.straight_kitchen_counter");
-    public  static final Block INNER_RIGHT_KITCHEN_COUNTER = registerBlock("inner_right_kitchen_counter", new InnerRightKitchenCounterBlock(BlockProperties.TEMPLATE_KITCHEN_COUNTER), IItemGroup.FURNITURED, "tooltip.furnitured.inner_right_kitchen_counter");
+    public  static final Block INNER_KITCHEN_COUNTER = registerBlock("inner_kitchen_counter", new InnerKitchenCounterBlock(BlockProperties.TEMPLATE_KITCHEN_COUNTER), IItemGroup.FURNITURED, "tooltip.furnitured.inner_kitchen_counter");
 
 
 

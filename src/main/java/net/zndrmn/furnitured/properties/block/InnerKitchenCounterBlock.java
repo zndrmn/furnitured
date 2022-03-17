@@ -19,7 +19,7 @@ import java.util.stream.Stream;
 
 import static net.minecraft.block.HorizontalFacingBlock.FACING;
 
-public class InnerRightKitchenCounterBlock extends Block {
+public class InnerKitchenCounterBlock extends Block {
 
     private static final VoxelShape SHAPE_NORTH = Stream.of(
             Block.createCuboidShape(1, 0, 1, 16, 12, 16),
@@ -49,7 +49,7 @@ public class InnerRightKitchenCounterBlock extends Block {
             Block.createCuboidShape(0, 12, 0, 16, 16, 16))
             .reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
-    public InnerRightKitchenCounterBlock(Settings settings) {
+    public InnerKitchenCounterBlock(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }
