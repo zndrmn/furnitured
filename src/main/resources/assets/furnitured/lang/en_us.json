@@ -10,9 +10,11 @@
   "block": "block translations",
   "block.furnitured.straight_kitchen_counter": "Kitchen Counter",
   "block.furnitured.inner_kitchen_counter": "Kitchen Counter",
+  "block.furnitured.outer_kitchen_counter": "Kitchen Counter",
 
   "tooltip": "block tooltips",
   "tooltip.furnitured.straight_kitchen_counter": "§8§ostraight kitchen counter§r",
-  "tooltip.furnitured.inner_kitchen_counter": "§8§oinner kitchen counter§r"
+  "tooltip.furnitured.inner_kitchen_counter": "§8§oinner kitchen counter§r",
+  "tooltip.furnitured.outer_kitchen_counter": "§8§oouter kitchen counter§r"
 
 }
