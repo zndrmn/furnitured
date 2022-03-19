@@ -1,0 +1,85 @@
+package net.zndrmn.furnitured.properties.block;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.ShapeContext;
+import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.state.StateManager;
+import net.minecraft.state.property.Properties;
+import net.minecraft.util.BlockMirror;
+import net.minecraft.util.BlockRotation;
+import net.minecraft.util.function.BooleanBiFunction;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
+
+import static net.minecraft.block.HorizontalFacingBlock.FACING;
+
+public class OuterKitchenCounterBlock extends Block {
+
+    private static final VoxelShape SHAPE_NORTH = VoxelShapes.combineAndSimplify(
+            Block.createCuboidShape(0, 12, 0, 16, 16, 16),
+            Block.createCuboidShape(1, 0, 1, 16, 12, 16),
+            BooleanBiFunction.OR);
+
+    private static final VoxelShape SHAPE_EAST  = VoxelShapes.combineAndSimplify(
+            Block.createCuboidShape(0, 12, 0, 16, 16, 16),
+            Block.createCuboidShape(0, 0, 1, 15, 12, 16),
+            BooleanBiFunction.OR);
+
+    private static final VoxelShape SHAPE_SOUTH = VoxelShapes.combineAndSimplify(
+            Block.createCuboidShape(0, 12, 0, 16, 16, 16),
+            Block.createCuboidShape(0, 0, 0, 15, 12, 15),
+            BooleanBiFunction.OR);
+
+    private static final VoxelShape SHAPE_WEST  = VoxelShapes.combineAndSimplify(
+            Block.createCuboidShape(0, 12, 0, 16, 16, 16),
+            Block.createCuboidShape(1, 0, 0, 16, 12, 15),
+            BooleanBiFunction.OR);
+
+
+
+    public OuterKitchenCounterBlock(Settings settings) {
+        super(settings);
+        setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
+    }
+
+    @Override
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        switch (state.get(FACING)) {
+            case NORTH :
+                return SHAPE_NORTH;
+            case EAST  :
+                return SHAPE_EAST;
+            case SOUTH :
+                return SHAPE_SOUTH;
+            case WEST  :
+                return SHAPE_WEST;
+            default :
+                return SHAPE_NORTH;
+        }
+    }
+
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext context) {
+        return this.getDefaultState().with(FACING, context.getPlayerFacing().getOpposite());
+    }
+
+    @Override
+    public BlockState rotate(BlockState state, BlockRotation rotation) {
+        return (BlockState)state.with(FACING, rotation.rotate((Direction)state.get(FACING)));
+    }
+
+    @Override
+    public BlockState mirror(BlockState state, BlockMirror mirror) {
+        return state.rotate(mirror.getRotation((Direction)state.get(FACING)));
+    }
+
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
+        stateManager.add(Properties.HORIZONTAL_FACING);
+    }
+
+}
